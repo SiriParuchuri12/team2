@@ -39,6 +39,6 @@ class LoginScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ); 
   }
 }
