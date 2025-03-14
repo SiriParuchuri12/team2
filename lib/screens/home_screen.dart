@@ -12,6 +12,8 @@ class HomeScreen extends StatelessWidget {
     {"name": "Headphones", "image": "assets/headphone.png"},
   ];
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                         builder: (context) => ProductScreen(product: product)));
               },
             );
-          }).toList(),
+          }),
         ],
       ),
     );
