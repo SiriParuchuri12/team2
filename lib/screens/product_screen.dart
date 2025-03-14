@@ -12,7 +12,9 @@ class ProductScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(product["image"]!, height: 200),
+          Center(
+          child: Image.asset(product["image"]!, height: 200),
+          ),
           Text(product["name"]!,
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
           Text("\$99.99", style: TextStyle(fontSize: 20, color: Colors.green)),

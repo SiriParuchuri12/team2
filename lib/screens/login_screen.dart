@@ -6,8 +6,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
+    return Scaffold(      body: Center(
         child: Padding(
           padding: EdgeInsets.all(20.0),
           child: Column(
