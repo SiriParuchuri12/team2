@@ -18,13 +18,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("E-Commerce"),
+        title: const Text("Shop Easy"),
         actions: [
           IconButton(
             icon: const Icon(Icons.person),
             onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen()));
             },
           ),
         ],
@@ -61,7 +61,7 @@ class HomeScreen extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               padding: const EdgeInsets.symmetric(horizontal: 10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, 
+                crossAxisCount: 2,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 childAspectRatio: 0.9,
@@ -87,10 +87,10 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.all(8), 
+                            padding: const EdgeInsets.all(8),
                             child: Image.asset(
                               product["image"]!,
-                              fit: BoxFit.cover, 
+                              fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) =>
                                   const Icon(Icons.image, size: 50),
                             ),

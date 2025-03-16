@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 
 void main() {
-  runApp(EcommerceApp());
+  runApp(ShopEasyApp());
 }
 
-class EcommerceApp extends StatelessWidget {
-  const EcommerceApp({super.key});
+class ShopEasyApp extends StatelessWidget {
+  const ShopEasyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'E-Commerce App',
+      title: 'ShopEasy',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -21,4 +21,3 @@ class EcommerceApp extends StatelessWidget {
     );
   }
 }
-//hi
